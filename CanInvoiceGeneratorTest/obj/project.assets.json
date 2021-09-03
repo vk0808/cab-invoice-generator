@@ -1253,6 +1253,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "CabInvoiceGenerator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CabInvoiceGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CabInvoiceGenerator.dll": {}
+        }
       }
     }
   },
@@ -4942,10 +4952,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "CabInvoiceGenerator/1.0.0": {
+      "type": "project",
+      "path": "../CabInvoiceGenerator/CabInvoiceGenerator.csproj",
+      "msbuildProject": "../CabInvoiceGenerator/CabInvoiceGenerator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CabInvoiceGenerator >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
@@ -4978,7 +4994,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\vk476\\Desktop\\Fellowship Program\\Practice Problems\\Day30Problems\\CabInvoiceGenerator\\CabInvoiceGenerator\\CabInvoiceGenerator.csproj": {
+              "projectPath": "C:\\Users\\vk476\\Desktop\\Fellowship Program\\Practice Problems\\Day30Problems\\CabInvoiceGenerator\\CabInvoiceGenerator\\CabInvoiceGenerator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
