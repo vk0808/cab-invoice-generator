@@ -32,6 +32,7 @@ namespace CabInvoiceGenerator
             }
         }
 
+        // uc-1
         public double CalculateFare(double distance, int time)
         {
             double totalFare = 0;
@@ -57,7 +58,7 @@ namespace CabInvoiceGenerator
             return Math.Max(totalFare, MINIMUM_FARE);
         }
 
-
+        // uc-2
         public InvoiceSummary CalculateFare(Ride[] rides)
         {
             double totalFare = 0;
@@ -78,7 +79,7 @@ namespace CabInvoiceGenerator
             return new InvoiceSummary(rides.Length, totalFare);
         }
 
-
+        // uc-3
         public InvoiceSummary GetInvoiceSummary(String userId)
         {
             try
@@ -91,7 +92,7 @@ namespace CabInvoiceGenerator
             }
         }
 
-
+        // uc-4
         public void AddRides(string userId, Ride[] rides)
         {
             try
