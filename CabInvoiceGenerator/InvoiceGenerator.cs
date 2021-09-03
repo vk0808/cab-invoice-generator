@@ -79,6 +79,19 @@ namespace CabInvoiceGenerator
         }
 
 
+        public InvoiceSummary GetInvoiceSummary(String userId)
+        {
+            try
+            {
+                return this.CalculateFare(rideRepository.GetRides(userId));
+            }
+            catch (CabInvoiceException)
+            {
+                throw new CabInvoiceException(CabInvoiceException.ExceptionType.INVALID_USER_ID, "Invalid user id");
+            }
+        }
+
+
         public void AddRides(string userId, Ride[] rides)
         {
             try
