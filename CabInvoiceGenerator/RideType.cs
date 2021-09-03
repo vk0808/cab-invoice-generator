@@ -1,1 +1,1 @@
-﻿public enum RideType { NORMAL }
+﻿public enum RideType { NORMAL, PREMIUM }
